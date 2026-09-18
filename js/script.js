@@ -120,6 +120,29 @@ gsap.from(".about-text", {
 
 
 // ========================================
+// CERTIFICATIONS ANIMATION
+// ========================================
+
+gsap.from(".cert-card", {
+
+    scrollTrigger: {
+        trigger: ".certs-grid",
+        start: "top 80%",
+        toggleActions: "play none none reverse"
+    },
+
+    opacity: 0,
+    y: 50,
+    duration: 0.8,
+
+    stagger: 0.12,
+
+    ease: "power3.out"
+
+});
+
+
+// ========================================
 // STACK ANIMATION
 // ========================================
 
